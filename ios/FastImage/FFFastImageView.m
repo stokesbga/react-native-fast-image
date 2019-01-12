@@ -58,6 +58,8 @@
     if (imageColor != nil) {
         _imageColor = imageColor;
         super.image = [self makeImage:super.image withTint:self.imageColor];
+    } else {
+        super.image = _imageBackup;
     }
 }
 
@@ -75,6 +77,7 @@
     if (self.imageColor != nil) {
         super.image = [self makeImage:image withTint:self.imageColor];
     } else {
+        _imageBackup = image;
         super.image = image;
     }
 }
