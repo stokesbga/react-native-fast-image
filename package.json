@@ -1,5 +1,5 @@
 {
-    "name": "react-native-fast-image",
+    "name": "@outfix/react-native-fast-image",
     "version": "5.2.0",
     "description": "🚩 FastImage, performant React Native image component.",
     "keywords": [
